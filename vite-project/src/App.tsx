@@ -1,10 +1,22 @@
 import './App.css'
+import {Toaster} from "react-hot-toast";
+import Routes from "./routes";
 
 function App() {
 
   return (
     <>
-      abc
+        <Routes/>
+        <Toaster
+            position="top-center"
+            reverseOrder={false}
+            toastOptions={{
+                style: {
+                    backgroundColor: '#141420',
+                    color: '#FFFFFFB2',
+                },
+            }}
+        />
     </>
   )
 }
